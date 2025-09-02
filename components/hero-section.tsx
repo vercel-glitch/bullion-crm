@@ -16,11 +16,11 @@ interface HeroSectionProps {
   };
 }
 
-export default function HeroSection({ 
-  title, 
-  subtitle, 
-  primaryButton, 
-  secondaryButton 
+export default function HeroSection({
+  title,
+  subtitle,
+  primaryButton,
+  secondaryButton,
 }: HeroSectionProps) {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
@@ -28,7 +28,7 @@ export default function HeroSection({
         <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-balance">
           {title}
         </h1>
-        <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty">
+        <p className="text-xl text-foreground mb-8 max-w-3xl mx-auto text-pretty">
           {subtitle}
         </p>
         {(primaryButton || secondaryButton) && (

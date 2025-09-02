@@ -29,12 +29,6 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
-              {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <Shield className="h-4 w-4" />
-                Trusted by Bullion Professionals
-              </div>
-
               {/* Main Headline */}
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 The Only CRM Built for{" "}
@@ -65,7 +59,7 @@ export default function HomePage() {
               </p>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">
                 <Link href="/demo">
                   <Button
                     size="lg"
@@ -87,7 +81,7 @@ export default function HomePage() {
               </div>
 
               {/* Social Proof */}
-              <div className="flex flex-col sm:flex-row items-center gap-6 text-sm text-gray-600">
+              <div className="flex flex-col sm:flex-row items-center gap-6 text-sm text-gray-600 justify-center lg:justify-start">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-amber-500" />
                   <span>No credit card required</span>
