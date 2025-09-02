@@ -31,7 +31,7 @@ export default function HomePage() {
             <div className="text-center lg:text-left">
               {/* Main Headline */}
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                The Only CRM Built for{" "}
+                The #1 CRM Built for{" "}
                 <span className="text-amber-500 relative">
                   Bullion
                   <svg
@@ -63,7 +63,7 @@ export default function HomePage() {
                 <Link href="/demo">
                   <Button
                     size="lg"
-                    className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
+                    className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-5 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
                   >
                     Start Free Trial
                     <span className="ml-2">→</span>
@@ -73,7 +73,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-8 py-4 text-lg transition-all duration-200"
+                    className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white font-semibold px-8 py-5 text-lg transition-all duration-200"
                   >
                     Watch Demo
                   </Button>
@@ -100,7 +100,7 @@ export default function HomePage() {
             {/* Right Column - Dashboard Preview */}
             <div className="relative lg:ml-8">
               {/* Main Dashboard Card */}
-              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 p-6 transform ">
                 {/* Dashboard Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-3">
@@ -158,10 +158,10 @@ export default function HomePage() {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center shadow-lg">
+              <div className="absolute -top-10 -left-3 lg:-top-6 lg:-left-6 w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center shadow-lg">
                 <Users className="h-8 w-8 text-amber-700" />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-black rounded-full flex items-center justify-center shadow-lg">
+              <div className="absolute -bottom-10 -right-3 lg:-bottom-6 lg:-right-6 w-16 h-16 bg-black rounded-full flex items-center justify-center shadow-lg">
                 <Package className="h-8 w-8 text-white" />
               </div>
             </div>
