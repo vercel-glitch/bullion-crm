@@ -20,9 +20,9 @@ export default function HomePage() {
       <section className="relative bg-gradient-to-br from-gray-50 via-white to-gray-50 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-amber-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
           <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gray-100 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-50 rounded-full mix-blend-multiply filter blur-2xl opacity-50"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-yellow-50 rounded-full mix-blend-multiply filter blur-2xl opacity-50"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
@@ -32,7 +32,7 @@ export default function HomePage() {
               {/* Main Headline */}
               <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 The #1 CRM Built for{" "}
-                <span className="text-amber-500 relative">
+                <span className="text-yellow-500 relative">
                   Bullion
                   <svg
                     className="absolute -bottom-2 left-0 w-full h-3"
@@ -44,7 +44,7 @@ export default function HomePage() {
                       stroke="currentColor"
                       strokeWidth="3"
                       strokeLinecap="round"
-                      className="text-amber-300"
+                      className="text-yellow-300"
                     />
                   </svg>
                 </span>{" "}
@@ -63,7 +63,7 @@ export default function HomePage() {
                 <Link href="/demo">
                   <Button
                     size="lg"
-                    className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-5 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
+                    className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-5 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
                   >
                     Start Free Trial
                     <span className="ml-2">→</span>
@@ -83,15 +83,15 @@ export default function HomePage() {
               {/* Social Proof */}
               <div className="flex flex-col sm:flex-row items-center gap-6 text-sm text-gray-600 justify-center lg:justify-start">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-amber-500" />
+                  <CheckCircle className="h-5 w-5 text-yellow-500" />
                   <span>No credit card required</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-amber-500" />
+                  <CheckCircle className="h-5 w-5 text-yellow-500" />
                   <span>Setup in 15 minutes</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-amber-500" />
+                  <CheckCircle className="h-5 w-5 text-yellow-500" />
                   <span>Cancel anytime</span>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function HomePage() {
                 {/* Dashboard Header */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-amber-500 rounded-lg flex items-center justify-center">
+                    <div className="w-8 h-8 bg-yellow-500 rounded-lg flex items-center justify-center">
                       <TrendingUp className="h-5 w-5 text-white" />
                     </div>
                     <div>
@@ -114,7 +114,7 @@ export default function HomePage() {
                       <p className="text-sm text-gray-500">Dashboard</p>
                     </div>
                   </div>
-                  <span className="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full">
+                  <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">
                     LIVE
                   </span>
                 </div>
@@ -124,12 +124,12 @@ export default function HomePage() {
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-500">Today's Sales</p>
                     <p className="text-2xl font-bold text-gray-900">$47,230</p>
-                    <p className="text-sm text-amber-600">+12.5% ↗</p>
+                    <p className="text-sm text-yellow-600">+12.5% ↗</p>
                   </div>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <p className="text-sm text-gray-500">Active Customers</p>
                     <p className="text-2xl font-bold text-gray-900">1,247</p>
-                    <p className="text-sm text-amber-600">+8.2% ↗</p>
+                    <p className="text-sm text-yellow-600">+8.2% ↗</p>
                   </div>
                 </div>
 
@@ -139,9 +139,9 @@ export default function HomePage() {
                     Live Spot Prices
                   </h4>
                   <div className="space-y-2">
-                    <div className="flex items-center justify-between p-2 bg-amber-50 rounded-lg">
+                    <div className="flex items-center justify-between p-2 bg-yellow-50 rounded-lg">
                       <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-amber-400 rounded-full"></div>
+                        <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
                         <span className="text-sm font-medium">Gold</span>
                       </div>
                       <span className="text-sm font-bold">$1,987.50</span>
@@ -158,8 +158,8 @@ export default function HomePage() {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-10 -left-3 lg:-top-6 lg:-left-6 w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center shadow-lg">
-                <Users className="h-8 w-8 text-amber-700" />
+              <div className="absolute -top-10 -left-3 lg:-top-6 lg:-left-6 w-16 h-16 bg-yellow-200 rounded-full flex items-center justify-center shadow-lg">
+                <Users className="h-8 w-8 text-yellow-700" />
               </div>
               <div className="absolute -bottom-10 -right-3 lg:-bottom-6 lg:-right-6 w-16 h-16 bg-black rounded-full flex items-center justify-center shadow-lg">
                 <Package className="h-8 w-8 text-white" />
@@ -271,8 +271,8 @@ export default function HomePage() {
             {/* Customer Management */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-12 h-12 bg-amber-100 rounded-lg">
-                  <Users className="h-6 w-6 text-amber-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-lg">
+                  <Users className="h-6 w-6 text-yellow-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">
                   Advanced Customer Management
@@ -308,8 +308,8 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-4 bg-white rounded-lg shadow-sm">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center">
-                      <span className="text-amber-600 font-semibold text-sm">
+                    <div className="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center">
+                      <span className="text-yellow-600 font-semibold text-sm">
                         JD
                       </span>
                     </div>
@@ -320,7 +320,7 @@ export default function HomePage() {
                   </div>
                   <div className="text-right">
                     <p className="font-semibold text-gray-900">$45,230</p>
-                    <p className="text-sm text-amber-600">+12% this month</p>
+                    <p className="text-sm text-yellow-600">+12% this month</p>
                   </div>
                 </div>
                 <div className="grid grid-cols-3 gap-3">
@@ -348,19 +348,19 @@ export default function HomePage() {
                   <h4 className="font-semibold text-black">
                     Live Market Prices
                   </h4>
-                  <span className="text-xs text-black bg-amber-200 px-2 py-1 rounded-full">
+                  <span className="text-xs text-black bg-yellow-200 px-2 py-1 rounded-full">
                     LIVE
                   </span>
                 </div>
                 <div className="space-y-3">
                   <div className="flex items-center justify-between p-3 bg-white rounded-lg">
                     <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-amber-400 rounded-full"></div>
+                      <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
                       <span className="font-medium">Gold (XAU)</span>
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-black">$1,987.50</p>
-                      <p className="text-xs text-amber-600">+$12.30 (0.6%)</p>
+                      <p className="text-xs text-yellow-600">+$12.30 (0.6%)</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-white rounded-lg">
@@ -380,7 +380,7 @@ export default function HomePage() {
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-black">$1,045.20</p>
-                      <p className="text-xs text-amber-600">+$8.90 (0.9%)</p>
+                      <p className="text-xs text-yellow-600">+$8.90 (0.9%)</p>
                     </div>
                   </div>
                 </div>
@@ -389,8 +389,8 @@ export default function HomePage() {
             {/* Real-time Pricing */}
             <div className="lg:order-2">
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-12 h-12 bg-amber-100 rounded-lg">
-                  <TrendingUp className="h-6 w-6 text-amber-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-lg">
+                  <TrendingUp className="h-6 w-6 text-yellow-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">
                   Real-Time Market Integration
@@ -428,8 +428,8 @@ export default function HomePage() {
             {/* Inventory Management */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex items-center justify-center w-12 h-12 bg-amber-100 rounded-lg">
-                  <Package className="h-6 w-6 text-amber-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-yellow-100 rounded-lg">
+                  <Package className="h-6 w-6 text-yellow-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground">
                   Smart Inventory Control
@@ -467,7 +467,7 @@ export default function HomePage() {
                   <h4 className="font-semibold text-black">
                     Current Inventory
                   </h4>
-                  <span className="text-xs text-black bg-amber-200 px-2 py-1 rounded-full">
+                  <span className="text-xs text-black bg-yellow-200 px-2 py-1 rounded-full">
                     24 Items
                   </span>
                 </div>
@@ -481,7 +481,7 @@ export default function HomePage() {
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-black">47 oz</p>
-                      <p className="text-xs text-amber-600">In Stock</p>
+                      <p className="text-xs text-yellow-600">In Stock</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-white rounded-lg">
@@ -493,7 +493,7 @@ export default function HomePage() {
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-black">230 oz</p>
-                      <p className="text-xs text-amber-600">In Stock</p>
+                      <p className="text-xs text-yellow-600">In Stock</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-white rounded-lg">
@@ -520,7 +520,7 @@ export default function HomePage() {
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-32 h-32 bg-gray-300/30 rounded-full blur-xl"></div>
-          <div className="absolute bottom-10 right-10 w-48 h-48 bg-amber-500/20 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 right-10 w-48 h-48 bg-yellow-500/20 rounded-full blur-2xl"></div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gray-200/40 rounded-full blur-3xl"></div>
         </div>
 
@@ -540,7 +540,7 @@ export default function HomePage() {
             <Link href="/demo">
               <Button
                 size="lg"
-                className="bg-amber-500 hover:bg-amber-400 text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
+                className="bg-yellow-500 hover:bg-yellow-400 text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1"
               >
                 Get Your Free Demo
                 <span className="ml-2">→</span>
@@ -559,15 +559,15 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-gray-600 text-sm">
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-amber-400" />
+              <CheckCircle className="h-5 w-5 text-yellow-400" />
               <span>Setup in under 24 hours</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-amber-400" />
+              <CheckCircle className="h-5 w-5 text-yellow-400" />
               <span>No long-term contracts</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-amber-400" />
+              <CheckCircle className="h-5 w-5 text-yellow-400" />
               <span>30-day money-back guarantee</span>
             </div>
           </div>

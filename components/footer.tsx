@@ -7,18 +7,18 @@ interface FooterProps {
 export default function Footer({ backgroundColor = "default" }: FooterProps) {
   const bgClass =
     backgroundColor === "amber"
-      ? "bg-amber-500 border-t border-amber-600"
+      ? "bg-yellow-500 border-t border-yellow-600"
       : "bg-background border-t";
 
   const textClass = backgroundColor === "amber" ? "text-white" : "";
 
   const subtitleClass =
-    backgroundColor === "amber" ? "text-amber-100" : "text-muted-foreground";
+    backgroundColor === "amber" ? "text-yellow-100" : "text-muted-foreground";
 
   const linkClass =
     backgroundColor === "amber"
-      ? "text-amber-100 hover:text-white transition-colors"
-      : "text-muted-foreground hover:text-amber-500 transition-colors";
+      ? "text-yellow-100 hover:text-white transition-colors"
+      : "text-muted-foreground hover:text-yellow-500 transition-colors";
 
   return (
     <footer className={`${bgClass} py-12 px-4 sm:px-6 lg:px-8`}>

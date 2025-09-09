@@ -1,10 +1,41 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Shield, ArrowLeft } from "lucide-react"
-import Link from "next/link"
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Shield, ArrowLeft } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function LoginPage() {
+  const [workspaceError, setWorkspaceError] = useState("");
+  const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Get form data
+    const formData = new FormData(e.currentTarget);
+    const workspace = formData.get("workspace") as string;
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
+
+    // Clear previous errors
+    setWorkspaceError("");
+
+    // Check if all fields are filled
+    if (!workspace) {
+      setWorkspaceError("Please enter your workspace name");
+      return;
+    }
+
+    // Check if workspace contains "priority"
+    if (!workspace.toLowerCase().includes("priority")) {
+      setWorkspaceError("Invalid workspace name");
+      return;
+    }
+
+    // Redirect to VerifiedCRM login
+    window.location.href = "https://priority.verifiedcrm.com/login";
+  };
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="w-full max-w-md">
@@ -27,42 +58,41 @@ export default function LoginPage() {
               </div>
             </div>
             <h1 className="text-2xl font-bold">Secure Access to Your CRM</h1>
-            <p className="text-muted-foreground mt-2">Welcome back! Log in to manage your bullion business.</p>
+            <p className="text-muted-foreground mt-2">
+              Welcome back! Go to your app to manage your bullion business.
+            </p>
           </div>
 
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleLogin}>
             <div className="space-y-2">
-              <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="your@email.com" className="h-12" />
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="password">Password</Label>
-              <Input id="password" type="password" placeholder="Enter your password" className="h-12" />
+              <Label htmlFor="workspace">Workspace</Label>
+              <Input
+                id="workspace"
+                name="workspace"
+                type="text"
+                placeholder="Enter your workspace name"
+                className={`h-12 ${workspaceError ? "border-red-500" : ""}`}
+                required
+              />
+              {workspaceError && (
+                <p className="text-sm text-red-500 mt-1">{workspaceError}</p>
+              )}
             </div>
 
             <Button
               type="submit"
               size="lg"
-              className="w-full h-12 bg-amber-500 hover:bg-amber-600 text-white font-semibold"
+              className="w-full h-12 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold"
             >
-              Login
+              Go To App
             </Button>
           </form>
 
-          <div className="flex items-center justify-center space-x-4 text-sm mt-6">
-            <Link href="/forgot-password" className="text-orange-500 hover:text-orange-600 transition-colors">
-              Forgot Password?
-            </Link>
-            <span className="text-muted-foreground">|</span>
-            <Link href="/request-access" className="text-orange-500 hover:text-orange-600 transition-colors">
-              Request Access
-            </Link>
-          </div>
-
           <div className="border-t mt-6 pt-6">
             <div className="text-center">
-              <p className="text-sm text-muted-foreground mb-4">Don't have an account yet?</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Don't have an account yet?
+              </p>
               <Link href="/demo">
                 <Button variant="outline" className="w-full bg-transparent">
                   Schedule a Demo
@@ -82,5 +112,5 @@ export default function LoginPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }

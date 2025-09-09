@@ -122,7 +122,7 @@ export default function SolutionsPage() {
             business.
           </p>
           <Link href="/demo">
-            <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white">
+            <Button size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-white">
               Schedule a Demo
             </Button>
           </Link>

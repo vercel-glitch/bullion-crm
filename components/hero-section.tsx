@@ -39,8 +39,8 @@ export default function HeroSection({
                   size="lg"
                   className={
                     primaryButton.variant === "secondary"
-                      ? "bg-white text-amber-600 hover:bg-amber-50"
-                      : "bg-amber-500 hover:bg-amber-600 text-white"
+                      ? "bg-white text-yellow-600 hover:bg-yellow-50"
+                      : "bg-yellow-500 hover:bg-yellow-600 text-white"
                   }
                 >
                   {primaryButton.text}

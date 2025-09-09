@@ -69,7 +69,7 @@ export default function ContactPage() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-amber-500 hover:bg-amber-600 text-white"
+                    className="w-full bg-yellow-500 hover:bg-yellow-600 text-white"
                   >
                     Send Message
                   </Button>
@@ -120,7 +120,7 @@ export default function ContactPage() {
                     can transform your bullion business.
                   </p>
                   <Link href="/demo">
-                    <Button className="bg-amber-500 hover:bg-amber-600 text-white">
+                    <Button className="bg-yellow-500 hover:bg-yellow-600 text-white">
                       Schedule a Demo
                     </Button>
                   </Link>

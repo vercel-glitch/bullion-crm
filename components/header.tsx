@@ -13,7 +13,7 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const getLinkClass = (page: string) => {
-    const baseClass = "hover:text-amber-500 transition-colors";
+    const baseClass = "hover:text-yellow-500 transition-colors";
     if (currentPage === page) {
       return `text-foreground ${baseClass}`;
     }
@@ -52,9 +52,13 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
             <Link href="/contact" className={getLinkClass("contact")}>
               Contact
             </Link>
-            <Link href="https://priority.verifiedcrm.com/login">
-              <Button variant="outline" size="sm">
-                Login
+            <Link href="/login">
+              <Button
+                variant="outline"
+                className="bg-yellow-500 cursor-pointer text-white font-semibold"
+                size="lg"
+              >
+                Go To App
               </Button>
             </Link>
           </div>
@@ -63,7 +67,7 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-amber-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-inset transition-colors"
+              className="inline-flex items-center justify-center p-2 rounded-md text-muted-foreground hover:text-yellow-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-inset transition-colors"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -82,37 +86,46 @@ export default function Header({ currentPage = "home" }: HeaderProps) {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t">
               <Link
                 href="/"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass("home")}`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass(
+                  "home"
+                )}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/solutions"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass("solutions")}`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass(
+                  "solutions"
+                )}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Solutions
               </Link>
               <Link
                 href="/demo"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass("demo")}`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass(
+                  "demo"
+                )}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Demo
               </Link>
               <Link
                 href="/contact"
-                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass("contact")}`}
+                className={`block px-3 py-2 rounded-md text-base font-medium ${getLinkClass(
+                  "contact"
+                )}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
               </Link>
+
               <div className="pt-2">
-                <Link href="https://priority.verifiedcrm.com/login">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
+                <Link href="/login">
+                  <Button
+                    variant="outline"
+                    size="sm"
                     className="w-full"
                     onClick={() => setIsMenuOpen(false)}
                   >

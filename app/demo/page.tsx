@@ -120,7 +120,7 @@ export default function DemoPage() {
                     <span>Demo sessions typically last 30-45 minutes</span>
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full bg-amber-500 hover:bg-amber-600 text-white">
+                  <Button type="submit" size="lg" className="w-full bg-yellow-500 hover:bg-yellow-600 text-white">
                     <Calendar className="h-4 w-4 mr-2" />
                     Schedule My Demo
                   </Button>

@@ -17,7 +17,7 @@ export default function FeatureCard({
   if (variant === "compact") {
     return (
       <div className="flex items-start gap-3">
-        <Icon className="h-6 w-6 text-amber-500 mt-1 flex-shrink-0" />
+        <Icon className="h-6 w-6 text-yellow-500 mt-1 flex-shrink-0" />
         <div>
           <h3 className="font-semibold mb-1">{title}</h3>
           {description && (
@@ -31,7 +31,7 @@ export default function FeatureCard({
   return (
     <Card className="border shadow-sm">
       <CardHeader>
-        <Icon className="h-12 w-12 text-amber-500 mb-4" />
+        <Icon className="h-12 w-12 text-yellow-500 mb-4" />
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent>
