@@ -29,7 +29,7 @@ export default function LoginPage() {
 
     // Check if workspace contains "priority"
     if (!workspace.toLowerCase().includes("priority")) {
-      setWorkspaceError("Invalid workspace name");
+      setWorkspaceError("Workspace not found.");
       return;
     }
 
